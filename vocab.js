@@ -8,14 +8,14 @@
 //   ( )    optional part of an answer           el (teléfono) móvil
 //   [ ]    hint only, never needs typing        tarde | late [not early]
 
-// Each theme is a metro line: `line` is its code, `color` its line ink, `on` the text colour on that ink.
+// Each theme is a metro line: `line` is its code, `color` its line paint, `on` the text colour on that paint.
 const THEMES = [
-  { id: "identities", name: "Identities", es: "Identidades", line: "L1", color: "var(--l1)", on: "#fff" },
-  { id: "experiences", name: "Experiences", es: "Experiencias", line: "L2", color: "var(--l2)", on: "#0B1230" },
-  { id: "ingenuity", name: "Human ingenuity", es: "Ingenio humano", line: "L3", color: "var(--l3)", on: "#fff" },
-  { id: "social", name: "Social organization", es: "Organización social", line: "L4", color: "var(--l4)", on: "#fff" },
-  { id: "planet", name: "Sharing the planet", es: "Compartir el planeta", line: "L5", color: "var(--l5)", on: "#0B1230" },
-  { id: "core", name: "Core essentials", es: "Lo esencial", line: "C", color: "var(--lc)", on: "#0B1230" },
+  { id: "identities", name: "Identities", es: "Identidades", line: "L1", color: "var(--l1)", on: "#140F08" },
+  { id: "experiences", name: "Experiences", es: "Experiencias", line: "L2", color: "var(--l2)", on: "#140F08" },
+  { id: "ingenuity", name: "Human ingenuity", es: "Ingenio humano", line: "L3", color: "var(--l3)", on: "#140F08" },
+  { id: "social", name: "Social organization", es: "Organización social", line: "L4", color: "var(--l4)", on: "#140F08" },
+  { id: "planet", name: "Sharing the planet", es: "Compartir el planeta", line: "L5", color: "var(--l5)", on: "#140F08" },
+  { id: "core", name: "Core essentials", es: "Lo esencial", line: "C", color: "var(--lc)", on: "#140F08" },
 ];
 
 const TOPICS = [];

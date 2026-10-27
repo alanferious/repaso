@@ -2,7 +2,9 @@
 
 *Todo empieza en cero.* KM0 (kilómetro cero) is a practice app for IB Spanish ab initio vocabulary and verbs, drawn as a metro map.
 
-Use it online at **https://alanferious.github.io/repaso/**, or download this folder and open `index.html` in Chrome, Edge or Firefox. It runs offline and needs no installation.
+Use it online at **https://alanferious.github.io/repaso/**, or download this folder and open `index.html` in Chrome, Edge or Firefox. Nothing to set up.
+
+Online, the site keeps working without a connection after your first visit, and Chrome or Edge can install it as an app (**Install app** in the footer, or the install icon in the address bar). Press **?** anywhere for keyboard shortcuts.
 
 - **Vocabulary**: 25 lists covering the five ab initio themes, their prescribed topics, and core lists (question words, connectives, tense time markers, opinions, numbers, dates).
   Modes: type the answer (English → Spanish, Spanish → English or mixed), multiple choice, and listening.
@@ -33,4 +35,4 @@ The word lists are organised around the ab initio themes and prescribed topics. 
 
 ## Credits
 
-Built with Claude. Fonts: Barlow and Barlow Condensed (SIL Open Font License, see `fonts/OFL.txt`).
+Built with Claude. Fonts: B612, B612 Mono and Doto (SIL Open Font License, see `fonts/OFL.txt`).

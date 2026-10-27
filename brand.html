@@ -5,57 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KM0 brand guide</title>
   <meta name="description" content="How the KM0 identity works: the name, the Zero, colour, type and voice.">
-  <meta name="theme-color" content="#0B1230">
+  <meta name="theme-color" content="#0A0907">
   <link rel="icon" href="icons/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <style>
+    body { background: var(--ground); --zero: var(--amber); }
     .guide-top { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding-block: 14px; border-bottom: 1px solid var(--rule); }
     .guide-top .km0 { height: 26px; width: auto; color: var(--ink); }
-    .guide-top .t { font: 700 15px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .14em; color: var(--ink-2); }
-    .guide-top a { margin-left: auto; font: 700 15px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .1em; }
+    .guide-top .t { font: 700 15px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-2); }
+    .guide-top a { margin-left: auto; font: 700 15px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .05em; }
     .bg { max-width: 1040px; margin: 0 auto; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); padding-bottom: 90px; }
     .hero { padding-block: 56px 40px; display: grid; gap: 18px; }
     .hero .km0 { height: clamp(90px, 16vw, 168px); width: auto; color: var(--ink); }
-    .hero .tag { font: 700 clamp(22px, 3.4vw, 34px)/1.3 var(--sign); text-transform: uppercase; letter-spacing: .16em; }
-    .hero p { max-width: 62ch; color: var(--ink-2); font-size: 20px; margin: 0; }
+    .hero .tag { font: 700 clamp(22px, 3.4vw, 34px)/1.3 var(--sign); letter-spacing: -.01em; }
+    .hero p { max-width: 54ch; color: var(--ink-2); font-size: 20px; margin: 0; }
     section { padding-block: 34px; border-top: 1px solid var(--rule); }
-    section h2 { font: 700 26px/1.1 var(--sign); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
-    section > p, section li { max-width: 66ch; }
+    section h2 { font: 700 26px/1.1 var(--sign); letter-spacing: -.01em; margin-bottom: 14px; }
+    section > p, section li { max-width: 58ch; }
     section > p { color: var(--ink-2); margin: 0 0 14px; }
     .plates { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 18px; }
-    .plate { border-radius: 6px; padding: 34px 24px; display: grid; place-items: center; min-height: 190px; position: relative; }
-    .plate.dark { background: #0B1230; color: #F4F4F0; border: 1px solid #2B3A78; }
-    .plate.light { background: #F4F4F0; color: #0B1230; }
+    .plate { border-radius: 4px; padding: 34px 24px; display: grid; place-items: center; min-height: 190px; position: relative; }
+    .plate.dark { background: #15130F; color: #F2EDE2; border: 6px solid #0A0907; --zero: #FFAA1F; }
+    .plate.light { background: #F3EEE3; color: #1C1913; border: 6px solid #0A0907; --zero: #C47A00; }
     .plate .km0 { height: 64px; width: auto; }
     .plates.two { grid-template-columns: repeat(2, 1fr); }
     @media (max-width: 560px) { .plates.two { grid-template-columns: 1fr; } }
     .plate .zero { height: 110px; width: auto; }
-    .plate figcaption { position: absolute; left: 14px; bottom: 10px; font: 600 12px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .12em; opacity: .75; }
+    .plate figcaption { position: absolute; left: 14px; bottom: 10px; font: 600 12px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .05em; opacity: .75; }
     .rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 18px; }
-    .rule { border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; background: var(--panel); }
-    .rule b { display: block; font: 700 15px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px; }
+    .rule { border: 1px solid var(--rule); border-radius: 4px; padding: 14px 16px; background: var(--panel); }
+    .rule b { display: block; font: 700 15px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
     .rule span { color: var(--ink-2); font-size: 16px; }
     .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 18px; }
-    .sw { border-radius: 6px; overflow: hidden; border: 1px solid var(--rule); background: var(--panel); }
+    .sw { border-radius: 4px; overflow: hidden; border: 1px solid var(--rule); background: var(--panel); }
     .sw i { display: block; height: 76px; }
     .sw div { padding: 10px 12px; font-size: 13px; }
-    .sw b { display: block; font: 700 14px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .08em; }
+    .sw b { display: block; font: 700 14px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .05em; }
     .sw code { color: var(--ink-2); font-size: 13px; }
     .sw.big i { height: 120px; }
     .spec { display: grid; gap: 14px; margin-top: 14px; }
-    .spec .a { font: 700 64px/1 var(--sign); text-transform: uppercase; letter-spacing: .04em; }
-    .spec .b { font: 600 22px/1.4 var(--ui); }
-    .spec small { display: block; color: var(--ink-2); font: 600 13px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .12em; margin-top: 4px; }
+    .spec .a { font: 900 72px/1 var(--dot); color: var(--amber); }
+    .spec .s { font: 700 34px/1.1 var(--ui); letter-spacing: -.02em; }
+    .spec .c { font: 700 22px/1.3 var(--code); }
+    .spec .b { font: 400 22px/1.4 var(--ui); }
+    .spec small { display: block; color: var(--ink-2); font: 600 13px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .05em; margin-top: 4px; }
     .voice { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
-    .voice div { border-radius: 6px; padding: 14px 16px; border: 1.5px solid var(--rule); }
+    .voice div { border-radius: 4px; padding: 14px 16px; border: 1.5px solid var(--rule); }
     .voice .do { border-color: var(--ok); }
     .voice .dont { border-color: var(--bad); }
-    .voice b { display: block; font: 700 14px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 6px; }
+    .voice b { display: block; font: 700 14px/1.3 var(--sign); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
     .voice .do b { color: var(--ok); } .voice .dont b { color: var(--bad); }
     .voice p { margin: 6px 0; }
     .inuse { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; margin-top: 18px; align-items: start; }
-    .inuse img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--rule); display: block; }
+    .inuse img { width: 100%; height: auto; border-radius: 4px; border: 1px solid var(--rule); display: block; }
     .files { list-style: none; padding: 0; margin: 14px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 6px 18px; }
     .files a { font-weight: 600; }
     @media (max-width: 700px) { .voice, .inuse { grid-template-columns: 1fr; } .spec .a { font-size: 44px; } }
@@ -63,10 +66,10 @@
 </head>
 <body>
   <div class="bg">
-    <header class="guide-top"><svg class="km0" viewBox="0 0 225.43 100" role="img" aria-label="KM0"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="currentColor" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="var(--scarlet)"/></svg><span class="t">Brand guide</span><a href="./">Open the app</a></header>
+    <header class="guide-top"><svg class="km0" viewBox="0 0 225.43 100" role="img" aria-label="KM0"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="var(--zero)" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="currentColor"/></svg><span class="t">Brand guide</span><a href="./">Open the app</a></header>
 
     <div class="hero">
-      <svg class="km0" viewBox="0 0 225.43 100" role="img" aria-label="KM0"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="currentColor" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="var(--scarlet)"/></svg>
+      <svg class="km0" viewBox="0 0 225.43 100" role="img" aria-label="KM0"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="var(--zero)" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="currentColor"/></svg>
       <div class="tag">Todo empieza en cero</div>
       <p>KM0 is a practice app for IB Spanish ab initio: vocabulary and verb drills on a metro map. This page explains how the identity works, so anything new looks and sounds like KM0.</p>
     </div>
@@ -79,26 +82,26 @@
 
     <section>
       <h2>The Zero</h2>
-      <p>The symbol is a tall zero with a scarlet dot at its centre: a dotted zero, the old sign-maker's way of telling 0 from O. The dot is the origin, kilómetro cero itself. It is the only scarlet in the mark.</p>
+      <p>The symbol is a tall zero lit in sodium amber, with a dot at its centre: a dotted zero, the old sign-maker's way of telling 0 from O. The dot is the origin, kilómetro cero itself, and takes the ink of the screen.</p>
       <div class="plates">
-        <figure class="plate dark"><svg class="zero" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 82.00 116.00" role="img" aria-label="KM0"><path fill="currentColor" fill-rule="evenodd" d="M33.00,0.00 A33.00,33.00 0 0 1 66.00,33.00 V67.00 A33.00,33.00 0 0 1 0.00,67.00 V33.00 A33.00,33.00 0 0 1 33.00,0.00Z M33.00,19.00 A14.00,14.00 0 0 1 47.00,33.00 V67.00 A14.00,14.00 0 0 1 19.00,67.00 V33.00 A14.00,14.00 0 0 1 33.00,19.00Z"/><circle cx="33.00" cy="50.00" r="8.00" fill="#E21D2D"/></svg><figcaption>On midnight</figcaption></figure>
-        <figure class="plate light"><svg class="zero" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 82.00 116.00" role="img" aria-label="KM0"><path fill="currentColor" fill-rule="evenodd" d="M33.00,0.00 A33.00,33.00 0 0 1 66.00,33.00 V67.00 A33.00,33.00 0 0 1 0.00,67.00 V33.00 A33.00,33.00 0 0 1 33.00,0.00Z M33.00,19.00 A14.00,14.00 0 0 1 47.00,33.00 V67.00 A14.00,14.00 0 0 1 19.00,67.00 V33.00 A14.00,14.00 0 0 1 33.00,19.00Z"/><circle cx="33.00" cy="50.00" r="8.00" fill="#E21D2D"/></svg><figcaption>On porcelain</figcaption></figure>
+        <figure class="plate dark"><svg class="zero" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 82.00 116.00" role="img" aria-label="KM0"><path fill="var(--zero)" fill-rule="evenodd" d="M33.00,0.00 A33.00,33.00 0 0 1 66.00,33.00 V67.00 A33.00,33.00 0 0 1 0.00,67.00 V33.00 A33.00,33.00 0 0 1 33.00,0.00Z M33.00,19.00 A14.00,14.00 0 0 1 47.00,33.00 V67.00 A14.00,14.00 0 0 1 19.00,67.00 V33.00 A14.00,14.00 0 0 1 33.00,19.00Z"/><circle cx="33.00" cy="50.00" r="8.00" fill="currentColor"/></svg><figcaption>On lit screen</figcaption></figure>
+        <figure class="plate light"><svg class="zero" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 82.00 116.00" role="img" aria-label="KM0"><path fill="var(--zero)" fill-rule="evenodd" d="M33.00,0.00 A33.00,33.00 0 0 1 66.00,33.00 V67.00 A33.00,33.00 0 0 1 0.00,67.00 V33.00 A33.00,33.00 0 0 1 33.00,0.00Z M33.00,19.00 A14.00,14.00 0 0 1 47.00,33.00 V67.00 A14.00,14.00 0 0 1 19.00,67.00 V33.00 A14.00,14.00 0 0 1 33.00,19.00Z"/><circle cx="33.00" cy="50.00" r="8.00" fill="currentColor"/></svg><figcaption>On e-paper</figcaption></figure>
       </div>
       <div class="rules">
         <div class="rule"><b>Clear space</b><span>Keep at least half the Zero's width empty on every side.</span></div>
         <div class="rule"><b>Smallest size</b><span>Symbol 16px tall, wordmark 18px tall. Below that, use the symbol alone.</span></div>
-        <div class="rule"><b>Grounds</b><span>Midnight or porcelain only. On photos, put it on a midnight plate.</span></div>
+        <div class="rule"><b>Grounds</b><span>The lit screen or e-paper, inside a dark bezel. On photos, put it on a screen plate.</span></div>
       </div>
     </section>
 
     <section>
       <h2>Wordmark and lockup</h2>
-      <p>The wordmark sets KM in Barlow Condensed Bold, with the Zero standing in for the 0. The lockup adds the tagline underneath, tracked wide. Letters and Zero take the ink of the ground; the dot stays scarlet on both.</p>
+      <p>The wordmark keeps its narrow drawn KM, with the Zero standing in for the 0. The lockup adds the tagline underneath, tracked wide. Letters and dot take the ink of the screen; the Zero is always amber (a deeper amber on e-paper).</p>
       <div class="plates two">
-        <figure class="plate dark"><svg class="km0" viewBox="0 0 225.43 100" role="img" aria-label="KM0"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="currentColor" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="var(--scarlet)"/></svg><figcaption>Wordmark · midnight</figcaption></figure>
-        <figure class="plate light"><svg class="km0" viewBox="0 0 225.43 100" role="img" aria-label="KM0"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="currentColor" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="var(--scarlet)"/></svg><figcaption>Wordmark · porcelain</figcaption></figure>
-        <figure class="plate dark"><img src="brand/km0-lockup.svg" alt="KM0, Todo empieza en cero" style="height:96px;width:auto"><figcaption>Lockup · midnight</figcaption></figure>
-        <figure class="plate light"><img src="brand/km0-lockup-light.svg" alt="KM0, Todo empieza en cero" style="height:96px;width:auto"><figcaption>Lockup · porcelain</figcaption></figure>
+        <figure class="plate dark"><svg class="km0" viewBox="0 0 225.43 100" role="img" aria-label="KM0"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="var(--zero)" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="currentColor"/></svg><figcaption>Wordmark · lit screen</figcaption></figure>
+        <figure class="plate light"><svg class="km0" viewBox="0 0 225.43 100" role="img" aria-label="KM0"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="var(--zero)" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="currentColor"/></svg><figcaption>Wordmark · e-paper</figcaption></figure>
+        <figure class="plate dark"><img src="brand/km0-lockup.svg" alt="KM0, Todo empieza en cero" style="height:96px;width:auto"><figcaption>Lockup · lit screen</figcaption></figure>
+        <figure class="plate light"><img src="brand/km0-lockup-light.svg" alt="KM0, Todo empieza en cero" style="height:96px;width:auto"><figcaption>Lockup · e-paper</figcaption></figure>
       </div>
       <ul class="files">
         <li><a href="brand/km0-wordmark.svg">km0-wordmark.svg</a> (for dark grounds)</li>
@@ -113,7 +116,7 @@
       <h2>Don't</h2>
       <div class="rules">
         <div class="rule"><b>No bar through the Zero</b><span>It is a station marker, not a transit-company roundel.</span></div>
-        <div class="rule"><b>No new dot colours</b><span>The origin dot is always scarlet, never a line colour.</span></div>
+        <div class="rule"><b>No new colours</b><span>The Zero is always amber and the dot always ink, never a line colour.</span></div>
         <div class="rule"><b>No round O</b><span>Never stretch, squash or swap the Zero for a circle or the letter O.</span></div>
         <div class="rule"><b>No rays or bursts</b><span>Lines only meet the Zero on the metro map, at 0° and 45°.</span></div>
       </div>
@@ -121,28 +124,32 @@
 
     <section>
       <h2>Colour</h2>
-      <p>Three colours carry the brand. The six line colours belong to the themes and only appear where a theme is meant.</p>
+      <p>KM0 is the screen inside a metro carriage. Three colours carry the brand: the lit screen, its ink, and sodium amber, the one lit accent. The wall and bezel frame every screen. The six line colours are enamel paints that belong to the themes and only appear where a theme is meant.</p>
       <div class="swatches">
-        <div class="sw big"><i style="background:#0B1230;box-shadow:inset 0 0 0 1px #2B3A78"></i><div><b>Midnight</b><code>#0B1230</code></div></div>
-        <div class="sw big"><i style="background:#F4F4F0"></i><div><b>Porcelain</b><code>#F4F4F0</code></div></div>
-        <div class="sw big"><i style="background:#E21D2D"></i><div><b>Origin scarlet</b><code>#E21D2D</code></div></div>
+        <div class="sw big"><i style="background:#15130F;box-shadow:inset 0 0 0 1px #3A352C"></i><div><b>Lit screen</b><code>#15130F</code></div></div>
+        <div class="sw big"><i style="background:#F2EDE2"></i><div><b>Screen ink</b><code>#F2EDE2</code></div></div>
+        <div class="sw big"><i style="background:#FFAA1F"></i><div><b>Sodium amber</b><code>#FFAA1F</code></div></div>
+        <div class="sw big"><i style="background:#E1E2DE"></i><div><b>Carriage wall</b><code>#E1E2DE</code></div></div>
+        <div class="sw big"><i style="background:#0A0907;box-shadow:inset 0 0 0 1px #3A352C"></i><div><b>Bezel</b><code>#0A0907</code></div></div>
       </div>
       <div class="swatches">
-        <div class="sw"><i style="background:#E21D2D"></i><div><b>L1 Identities</b><code>#E21D2D</code></div></div>
-        <div class="sw"><i style="background:#FFC20E"></i><div><b>L2 Experiences</b><code>#FFC20E</code></div></div>
-        <div class="sw"><i style="background:#1E5BFF"></i><div><b>L3 Human ingenuity</b><code>#1E5BFF</code></div></div>
-        <div class="sw"><i style="background:#C2307A"></i><div><b>L4 Social organization</b><code>#C2307A</code></div></div>
-        <div class="sw"><i style="background:#22B14C"></i><div><b>L5 Sharing the planet</b><code>#22B14C</code></div></div>
-        <div class="sw"><i style="background:#A7B0C8"></i><div><b>C Core essentials</b><code>#A7B0C8</code></div></div>
+        <div class="sw"><i style="background:#DA6040"></i><div><b>L1 Identities</b><code>#DA6040 brick</code></div></div>
+        <div class="sw"><i style="background:#2E9F95"></i><div><b>L2 Experiences</b><code>#2E9F95 petrol</code></div></div>
+        <div class="sw"><i style="background:#5C82D8"></i><div><b>L3 Human ingenuity</b><code>#5C82D8 cobalt</code></div></div>
+        <div class="sw"><i style="background:#B26BA7"></i><div><b>L4 Social organization</b><code>#B26BA7 plum</code></div></div>
+        <div class="sw"><i style="background:#7DA542"></i><div><b>L5 Sharing the planet</b><code>#7DA542 moss</code></div></div>
+        <div class="sw"><i style="background:#A69F90"></i><div><b>C Core essentials</b><code>#A69F90 stone</code></div></div>
       </div>
     </section>
 
     <section>
       <h2>Type</h2>
-      <p>Barlow Condensed is the signage voice: anything you navigate by, press or read from a distance. Barlow is for reading and typing. Numbers are always tabular.</p>
+      <p>B612 carries all text. Airbus drew it for cockpit screens, to stay readable on a lit display at a glance. Headings are bold and in sentence case; only small labels use tracked capitals. B612 Mono sets codes and keys. Doto, a dot-matrix face, is kept for short numbers such as the exam countdown, never for words you study. Numbers are always tabular.</p>
       <div class="spec">
-        <div><div class="a">Próxima parada</div><small>Barlow Condensed Bold · uppercase · tracked</small></div>
-        <div><div class="b" lang="es">el azúcar · la sequía · despedir</div><small>Barlow SemiBold · words and answers</small></div>
+        <div><div class="a">2 días</div><small>Doto Black · countdowns and short numbers only</small></div>
+        <div><div class="s" lang="es">Próxima estación</div><small>B612 Bold · headings, buttons, prompts</small></div>
+        <div><div class="b" lang="es">el azúcar · la sequía · despedir</div><small>B612 Regular · words, answers, reading</small></div>
+        <div><div class="c">L1 · Enter · M</div><small>B612 Mono Bold · line codes and keys</small></div>
       </div>
     </section>
 
@@ -160,7 +167,7 @@
       <p>The link preview and the app icon, as they appear when KM0 is shared or added to a home screen.</p>
       <div class="inuse">
         <img src="icons/og-image.png" alt="KM0 link preview: the wordmark beside metro lines meeting at the Zero" width="1200" height="630">
-        <img src="icons/android-chrome-512x512.png" alt="KM0 app icon: the Zero on midnight" width="512" height="512">
+        <img src="icons/android-chrome-512x512.png" alt="KM0 app icon: the amber Zero on the bezel" width="512" height="512">
       </div>
     </section>
   </div>

@@ -4,8 +4,8 @@
   "description": "IB Spanish ab initio vocab and verb drills, drawn as a metro map.",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#0B1230",
-  "theme_color": "#0B1230",
+  "background_color": "#DCD6CA",
+  "theme_color": "#0A0907",
   "icons": [
     { "src": "icons/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icons/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
