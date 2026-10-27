@@ -42,61 +42,61 @@ francés; francesa | French
 alemán; alemana | German
 mexicano/a | Mexican
 argentino/a | Argentinian; Argentine
-estadounidense | American [from the USA]
+estadounidense; norteamericano/a; americano/a | American [from the USA]
 chino/a | Chinese
 alto/a | tall
 bajo/a | short [height]
-delgado/a | thin; slim
+delgado/a; flaco/a | thin; slim; skinny
 gordo/a | fat
-de estatura media | of medium height; medium height
-guapo/a | good-looking; handsome; pretty
+de estatura media; de altura media | of medium height; medium height
+guapo/a; lindo/a | good-looking; handsome; pretty
 feo/a | ugly
 joven | young
-mayor | old; older [person]
-el pelo | hair
+mayor; viejo/a | old; older [person]; elderly
+el pelo; el cabello | hair
 los ojos | eyes
 el pelo rubio | blond hair; blonde hair
-el pelo castaño | brown hair
+el pelo castaño; el pelo marrón | brown hair
 el pelo negro | black hair
 el pelo rizado | curly hair
-el pelo liso | straight hair
+el pelo liso; el pelo lacio | straight hair
 el pelo largo | long hair
 el pelo corto | short hair
 pelirrojo/a | red-haired; ginger
 los ojos azules | blue eyes
 los ojos verdes | green eyes
-los ojos marrones | brown eyes
-llevar gafas | to wear glasses
+los ojos marrones; los ojos cafés | brown eyes
+llevar gafas; llevar lentes; usar gafas | to wear glasses
 la barba | beard
 la personalidad | personality
-simpático/a | nice; friendly
+simpático/a; agradable; majo/a | nice; friendly; likeable
 antipático/a | unfriendly; unpleasant; mean
-amable | kind
+amable | kind; nice
 trabajador/a | hard-working
-perezoso/a | lazy
-inteligente | intelligent; clever
-tímido/a | shy
-extrovertido/a | outgoing; extroverted
+perezoso/a; vago/a | lazy
+inteligente; listo/a | intelligent; clever; smart; bright
+tímido/a | shy; timid
+extrovertido/a; sociable | outgoing; extroverted; sociable
 hablador/a | talkative; chatty
-gracioso/a | funny
+gracioso/a; chistoso/a | funny
 serio/a | serious
 generoso/a | generous
 egoísta | selfish
 paciente | patient
 impaciente | impatient
 responsable | responsible
-educado/a | polite; well-mannered
-maleducado/a | rude; bad-mannered
-tranquilo/a | calm; quiet
-alegre | cheerful; happy
+educado/a; cortés | polite; well-mannered
+maleducado/a; grosero/a | rude; bad-mannered; impolite
+tranquilo/a; calmado/a | calm; quiet; relaxed
+alegre; feliz; contento/a | cheerful; happy
 creativo/a | creative
 `);
 
 topic("identities", "relationships", "Personal relationships", "Relaciones personales", `
 la familia | family
 los padres | parents
-la madre | mother
-el padre | father
+la madre; la mamá | mother; mum; mom
+el padre; el papá | father; dad
 el hermano | brother
 la hermana | sister
 los hermanos | siblings; brothers and sisters; brothers
@@ -119,7 +119,7 @@ la madrastra | stepmother
 el/la gemelo/a | twin
 el bebé | baby
 el/la adolescente | teenager; adolescent
-la gente | people
+la gente; las personas | people
 mayor que | older than
 menor que | younger than
 el/la amigo/a | friend
@@ -138,16 +138,16 @@ el amor | love
 la confianza | trust
 el apoyo | support
 el respeto | respect
-conocer | to meet; to know [a person]
+conocer | to meet; to know [a person]; to get to know
 llevarse bien con | to get on well with; to get along with
 llevarse mal con | to get on badly with; to not get on with
-pelearse | to fight; to fall out
+pelearse | to fight; to fall out; to quarrel
 discutir | to argue
 confiar en | to trust
 apoyar | to support
-salir con | to go out with
+salir con | to go out with; to date
 enamorarse de | to fall in love with
-casarse | to get married
+casarse | to get married; to marry
 estar casado/a | to be married
 divorciarse | to get divorced
 estar separado/a | to be separated
@@ -155,13 +155,13 @@ la boda | wedding
 `);
 
 topic("identities", "food", "Eating and drinking", "Comer y beber", `
-la comida | food; meal
+la comida | food; meal; lunch
 el desayuno | breakfast
 el almuerzo | lunch
 la cena | dinner; supper
 la merienda | afternoon snack; snack
 desayunar | to have breakfast
-almorzar | to have lunch
+almorzar; comer | to have lunch
 cenar | to have dinner
 tener hambre | to be hungry
 tener sed | to be thirsty
@@ -171,7 +171,7 @@ el agua | water
 el zumo; el jugo | juice
 el café | coffee
 el té | tea
-el refresco | soft drink; fizzy drink
+el refresco; la gaseosa | soft drink; fizzy drink; soda
 el queso | cheese
 el huevo | egg
 la carne | meat
@@ -181,28 +181,28 @@ el jamón | ham
 el arroz | rice
 la pasta | pasta
 las patatas; las papas | potatoes
-las patatas fritas | chips; fries; crisps
-las verduras | vegetables
+las patatas fritas; las papas fritas | chips; fries; crisps
+las verduras; los vegetales; las hortalizas | vegetables
 la fruta | fruit
 la manzana | apple
 la naranja | orange
-el plátano | banana
+el plátano; la banana; el banano | banana
 la fresa | strawberry
 el tomate | tomato
 la lechuga | lettuce
 la ensalada | salad
 la sopa | soup
-el bocadillo | sandwich [in a baguette]; sandwich
-los dulces | sweets; candy
-el pastel | cake; pastry
+el bocadillo; el sándwich; el sandwich | sandwich [in a baguette]; sandwich
+los dulces; los caramelos; las golosinas | sweets; candy
+el pastel; la tarta | cake; pastry
 el helado | ice cream
 el postre | dessert
 el azúcar | sugar
 la sal | salt
 el aceite | oil
 picante | spicy; hot [spicy]
-rico/a; delicioso/a | delicious; tasty
-sano/a | healthy
+rico/a; delicioso/a; sabroso/a | delicious; tasty; yummy
+sano/a; saludable | healthy
 la comida rápida | fast food
 la comida basura | junk food
 vegetariano/a | vegetarian
@@ -210,7 +210,7 @@ vegano/a | vegan
 alérgico/a a | allergic to
 la dieta | diet
 el restaurante | restaurant
-el/la camarero/a | waiter; waitress
+el/la camarero/a; el/la mesero/a | waiter; waitress; server
 la cuenta | bill; check
 el menú del día | set menu; menu of the day
 pedir | to order; to ask for
@@ -232,35 +232,35 @@ la mano | hand
 la pierna | leg
 el pie | foot
 la espalda | back
-el estómago | stomach
+el estómago; la barriga; la tripa | stomach; tummy; belly
 la garganta | throat
 los dientes | teeth
 el corazón | heart
 la nariz | nose
 la boca | mouth
-las orejas | ears
+las orejas; los oídos | ears
 el dolor | pain
 me duele la cabeza | I have a headache; my head hurts
 me duelen los pies | my feet hurt
 me rompí la pierna | I broke my leg
 estar enfermo/a | to be ill; to be sick
 estar cansado/a | to be tired
-estar resfriado/a | to have a cold
+estar resfriado/a; tener un resfriado; estar constipado/a | to have a cold
 tener fiebre | to have a temperature; to have a fever
 tener gripe | to have flu; to have the flu
 la tos | cough
-herido/a | injured; hurt
-el/la médico/a | doctor
+herido/a; lastimado/a | injured; hurt
+el/la médico/a; el/la doctor/a | doctor
 el hospital | hospital
 la farmacia | pharmacy; chemist's
-la medicina | medicine
-la pastilla | pill; tablet
+la medicina; el medicamento | medicine
+la pastilla; la píldora; el comprimido | pill; tablet
 la cita | appointment; date
 hacer ejercicio | to exercise; to do exercise
 estar en forma | to be fit
 mantenerse en forma | to keep fit; to stay in shape
 el gimnasio | gym
-entrenar | to train
+entrenar; entrenarse | to train
 dormir bien | to sleep well
 el sueño | sleep; dream
 descansar | to rest
@@ -272,11 +272,11 @@ fumar | to smoke
 el tabaco | tobacco
 el alcohol | alcohol
 las drogas | drugs
-llevar una vida sana | to lead a healthy life; to have a healthy lifestyle
+llevar una vida sana; llevar una vida saludable | to lead a healthy life; to have a healthy lifestyle
 equilibrado/a | balanced
 evitar | to avoid
-perder peso | to lose weight
-engordar | to put on weight; to gain weight
+perder peso; adelgazar | to lose weight
+engordar; ganar peso | to put on weight; to gain weight
 `);
 
 /* ───────────────────────────── EXPERIENCES ───────────────────────────── */
@@ -285,25 +285,25 @@ topic("experiences", "routine", "Daily routine", "La rutina diaria", `
 la rutina | routine
 despertarse | to wake up
 levantarse | to get up
-ducharse | to have a shower; to shower
-bañarse | to have a bath
-lavarse los dientes | to brush one's teeth; to brush my teeth; to brush your teeth
+ducharse; darse una ducha | to have a shower; to shower
+bañarse; darse un baño | to have a bath
+lavarse los dientes; cepillarse los dientes | to brush one's teeth; to brush my teeth; to brush your teeth
 vestirse | to get dressed
 peinarse | to comb one's hair; to brush one's hair
 maquillarse | to put on make-up; to put on makeup
 afeitarse | to shave
 el despertador | alarm clock
 salir de casa | to leave home; to leave the house
-ir al instituto | to go to school [secondary]
-coger el autobús; tomar el autobús | to catch the bus; to take the bus
+ir al instituto; ir al colegio; ir a la escuela; ir al insti | to go to school [secondary]
+coger el autobús; tomar el autobús; coger el bus; tomar el bus | to catch the bus; to take the bus
 llegar | to arrive
-empezar | to start; to begin
-terminar | to finish; to end
+empezar; comenzar | to start; to begin
+terminar; acabar | to finish; to end
 tardo veinte minutos | it takes me twenty minutes
-volver a casa | to return home; to go back home; to come back home
+volver a casa; regresar a casa | to return home; to go back home; to come back home
 la hora de comer | lunchtime
-hacer los deberes | to do homework; to do my homework
-ver la televisión | to watch TV; to watch television
+hacer los deberes; hacer la tarea; hacer las tareas | to do homework; to do my homework
+ver la televisión; ver la tele | to watch TV; to watch television
 acostarse | to go to bed
 dormirse | to fall asleep
 a las siete | at seven o'clock; at seven
@@ -311,35 +311,35 @@ en punto | on the dot; o'clock [exactly]
 cada mañana | every morning; each morning
 el fin de semana | weekend; the weekend
 los días laborables | weekdays; working days
-el dormitorio | bedroom
+el dormitorio; la habitación; el cuarto | bedroom
 ayudar en casa | to help at home
-las tareas domésticas | household chores; chores; housework
+las tareas domésticas; las tareas del hogar; los quehaceres | household chores; chores; housework
 poner la mesa | to set the table; to lay the table
 quitar la mesa | to clear the table
-lavar los platos | to wash the dishes; to do the washing up
+lavar los platos; fregar los platos | to wash the dishes; to do the washing up
 hacer la cama | to make the bed
 pasar la aspiradora | to vacuum; to hoover
 sacar la basura | to take out the rubbish; to take out the trash
-ordenar mi dormitorio | to tidy my bedroom; to tidy my room
-pasear al perro | to walk the dog
+ordenar mi dormitorio; ordenar mi habitación; ordenar mi cuarto | to tidy my bedroom; to tidy my room
+pasear al perro; sacar al perro | to walk the dog
 `);
 
 topic("experiences", "leisure", "Leisure", "El ocio", `
 el ocio | leisure
 el tiempo libre | free time; spare time
-el pasatiempo | hobby; pastime
-la afición | hobby; interest
-jugar al fútbol | to play football; to play soccer
-jugar al baloncesto | to play basketball
-jugar al tenis | to play tennis
+el pasatiempo; el hobby | hobby; pastime
+la afición; el hobby | hobby; interest
+jugar al fútbol; jugar fútbol | to play football; to play soccer
+jugar al baloncesto; jugar al básquetbol; jugar al básquet; jugar baloncesto | to play basketball
+jugar al tenis; jugar tenis | to play tennis
 jugar a los videojuegos | to play video games
-hacer deporte | to do sport; to play sport; to do sports
+hacer deporte; practicar deporte | to do sport; to play sport; to do sports
 nadar | to swim
 correr | to run
-montar en bicicleta | to ride a bike; to cycle
+montar en bicicleta; montar en bici; andar en bicicleta; ir en bici | to ride a bike; to cycle
 montar a caballo | to ride a horse; to go horse riding
 hacer senderismo | to go hiking; to hike
-dar un paseo | to go for a walk; to take a walk
+dar un paseo; pasear; ir de paseo | to go for a walk; to take a walk
 ir de compras | to go shopping
 ir al cine | to go to the cinema; to go to the movies
 salir con amigos | to go out with friends
@@ -351,14 +351,14 @@ bailar | to dance
 leer | to read
 dibujar | to draw
 pintar | to paint
-sacar fotos | to take photos; to take pictures
+sacar fotos; tomar fotos; hacer fotos | to take photos; to take pictures
 escuchar música | to listen to music
 el ajedrez | chess
 el equipo | team
 el partido | match; game
 el club | club
 el polideportivo | sports centre; sports center; leisure centre
-la piscina | swimming pool; pool
+la piscina; la alberca | swimming pool; pool
 el parque | park
 el centro comercial | shopping centre; shopping mall; mall
 el concierto | concert
@@ -367,8 +367,8 @@ el teatro | theatre; theater; drama
 el campo | countryside; field; pitch
 ganar | to win; to earn
 perder | to lose; to miss
-el/la aficionado/a | fan; supporter
-hacer voluntariado | to volunteer; to do volunteering
+el/la aficionado/a; el/la hincha | fan; supporter
+hacer voluntariado; ser voluntario/a | to volunteer; to do volunteering
 `);
 
 topic("experiences", "holidays", "Holidays", "Las vacaciones", `
@@ -389,10 +389,10 @@ el hotel | hotel
 el albergue juvenil | youth hostel
 el camping | campsite
 ir de camping | to go camping
-alojarse | to stay [accommodation]
+alojarse; hospedarse; quedarse | to stay [accommodation]
 quedarse | to stay; to remain
 la estancia | stay
-la habitación | room; bedroom
+la habitación; el cuarto | room; bedroom
 la habitación doble | double room
 la habitación individual | single room
 reservar | to book; to reserve
@@ -400,11 +400,11 @@ la reserva | booking; reservation
 la maleta | suitcase
 hacer la maleta | to pack; to pack my suitcase
 el pasaporte | passport
-el billete | ticket
+el billete; el boleto | ticket
 el aeropuerto | airport
 el avión | plane; aeroplane; airplane
-tomar el sol | to sunbathe
-la crema solar | sun cream; sunscreen
+tomar el sol; broncearse | to sunbathe
+la crema solar; el protector solar | sun cream; sunscreen
 quemarse | to get sunburnt; to burn
 el mar | sea
 bañarse en el mar | to swim in the sea
@@ -414,11 +414,11 @@ la excursión | trip; excursion; outing
 el recuerdo | souvenir; memory
 el mapa | map
 la oficina de turismo | tourist office
-las vistas | views; the view
+las vistas; la vista | views; the view; view
 el paisaje | landscape; scenery
 ¿dónde te alojaste? | where did you stay?
-lo pasé bomba | I had a great time
-lo pasé fatal | I had an awful time; I had a terrible time
+lo pasé bomba; lo pasé genial; lo pasé muy bien | I had a great time; I had a fantastic time
+lo pasé fatal; lo pasé muy mal | I had an awful time; I had a terrible time
 fue inolvidable | it was unforgettable
 hacía sol | it was sunny
 hacía calor | it was hot
@@ -428,7 +428,7 @@ llovió | it rained
 topic("experiences", "festivals", "Festivals and celebrations", "Fiestas y celebraciones", `
 la fiesta | party; festival; celebration
 el festival | festival
-celebrar | to celebrate
+celebrar; festejar | to celebrate
 la celebración | celebration
 el cumpleaños | birthday
 la Navidad | Christmas
@@ -441,7 +441,7 @@ la Semana Santa | Holy Week; Easter
 el Carnaval | Carnival
 la quinceañera | quinceañera; fifteenth birthday party
 el Día de la Madre | Mother's Day
-el día festivo | public holiday; bank holiday
+el día festivo; el feriado; el día feriado | public holiday; bank holiday
 la tradición | tradition
 tradicional | traditional
 la costumbre | custom; habit
@@ -457,9 +457,9 @@ el traje típico | traditional costume; traditional dress
 la comida típica | typical food; traditional food
 el regalo | present; gift
 regalar | to give [as a present]; to give a gift
-la tarta | cake [birthday]; cake
+la tarta; el pastel | cake [birthday]; cake
 las velas | candles
-decorar | to decorate
+decorar; adornar | to decorate
 la decoración | decoration
 invitar | to invite
 el/la invitado/a | guest
@@ -467,7 +467,7 @@ la invitación | invitation
 reunirse | to get together; to meet
 la reunión familiar | family gathering
 brindar | to toast; to make a toast
-¡felicidades! | congratulations!; happy birthday!
+¡felicidades!; ¡enhorabuena!; ¡felicitaciones! | congratulations!; happy birthday!
 ¡feliz cumpleaños! | happy birthday!
 ¡feliz Navidad! | merry Christmas!; happy Christmas!
 ¡feliz Año Nuevo! | happy New Year!
@@ -478,31 +478,31 @@ brindar | to toast; to make a toast
 topic("ingenuity", "transport", "Transport", "El transporte", `
 el transporte | transport; transportation
 el transporte público | public transport; public transportation
-el coche; el carro | car
-el autobús | bus
+el coche; el carro; el auto | car; automobile
+el autobús; el bus | bus
 el autocar | coach
 el tren | train
 el metro | underground; subway; metro; tube
 el avión | plane; aeroplane; airplane
 el barco | boat; ship
 la bicicleta; la bici | bicycle; bike
-la moto | motorbike; motorcycle
+la moto; la motocicleta | motorbike; motorcycle
 el taxi | taxi
-ir a pie; ir andando | to go on foot; to walk
+ir a pie; ir andando; caminar | to go on foot; to walk
 ir en coche | to go by car
 ir en tren | to go by train
 la estación | station
 la estación de autobuses | bus station
 la parada de autobús | bus stop
 el andén | platform
-el billete de ida | one-way ticket; single ticket
-el billete de ida y vuelta | return ticket; round-trip ticket
+el billete de ida; el boleto de ida | one-way ticket; single ticket
+el billete de ida y vuelta; el boleto de ida y vuelta | return ticket; round-trip ticket
 el horario | timetable; schedule
 salir | to leave; to go out; to depart
 la salida | departure; exit
 la llegada | arrival
-el retraso | delay
-el atasco | traffic jam
+el retraso; la demora | delay
+el atasco; el embotellamiento | traffic jam
 el tráfico | traffic
 rápido/a | fast; quick
 lento/a | slow
@@ -510,15 +510,15 @@ cómodo/a | comfortable
 incómodo/a | uncomfortable
 barato/a | cheap
 caro/a | expensive
-conducir | to drive
-el carné de conducir | driving licence; driver's license
+conducir; manejar | to drive
+el carné de conducir; el carnet de conducir; el permiso de conducir; la licencia de conducir | driving licence; driver's license
 la carretera | road
 la autopista | motorway; highway
 la calle | street
 el semáforo | traffic lights
 cruzar | to cross
-girar | to turn
-todo recto | straight on; straight ahead
+girar; doblar; torcer | to turn
+todo recto; todo derecho | straight on; straight ahead
 a la derecha | on the right; to the right
 a la izquierda | on the left; to the left
 cerca de | near; close to
@@ -532,7 +532,7 @@ ecológico/a | eco-friendly; ecological
 
 topic("ingenuity", "entertainment", "Entertainment", "El entretenimiento", `
 el entretenimiento | entertainment
-la película | film; movie
+la película; el filme | film; movie
 la película de acción | action film; action movie
 la película de terror | horror film; horror movie
 la película de ciencia ficción | science fiction film; sci-fi film
@@ -546,23 +546,23 @@ el concurso | game show; competition; quiz show
 el actor | actor
 la actriz | actress
 el/la cantante | singer
-el grupo | group; band
+el grupo; la banda | group; band
 la canción | song
 el espectáculo | show; performance
 la obra de teatro | play
 el musical | musical
-la entrada | ticket [for an event]; entrance
+la entrada; el boleto | ticket [for an event]; entrance
 la taquilla | box office; ticket office
 el estreno | premiere; release
-el argumento | plot; argument
+el argumento; la trama | plot; argument
 el personaje | character [in a story]
 el/la protagonista | main character; protagonist
 los efectos especiales | special effects
 la estrella | star
-famoso/a | famous
+famoso/a; conocido/a | famous; well-known
 la fama | fame
 el videojuego | video game
-el parque de atracciones | theme park; amusement park
+el parque de atracciones; el parque de diversiones | theme park; amusement park
 el circo | circus
 el zoo | zoo
 la feria | fair
@@ -574,17 +574,17 @@ el público | audience; public
 aplaudir | to applaud; to clap
 reírse | to laugh
 llorar | to cry
-asustar | to frighten; to scare
+asustar; dar miedo | to frighten; to scare
 me hizo reír | it made me laugh
-la reseña | review
+la reseña; la crítica | review
 recomendar | to recommend
 entretenido/a | entertaining
 `);
 
 topic("ingenuity", "media", "Media", "Los medios", `
-los medios de comunicación | the media; media
+los medios de comunicación; los medios | the media; media
 la prensa | the press; press
-el periódico | newspaper
+el periódico; el diario | newspaper
 la revista | magazine
 las noticias | news; the news
 las noticias falsas | fake news; false news
@@ -598,21 +598,21 @@ la televisión; la tele | television; TV
 el canal | channel
 el/la presentador/a | presenter; host
 en directo | live
-el anuncio | advert; advertisement; ad
+el anuncio; el comercial | advert; advertisement; ad; commercial
 la publicidad | advertising
 las redes sociales | social media; social networks
 el blog | blog
 el/la bloguero/a | blogger
 el/la seguidor/a | follower
 seguir | to follow
-publicar | to publish; to post
+publicar; colgar | to publish; to post
 compartir | to share
 comentar | to comment
 el comentario | comment
 el vídeo; el video | video
 la foto | photo
 subir | to upload; to go up
-descargar | to download
+descargar; bajar | to download
 el mensaje | message
 el pódcast; el podcast | podcast
 informar | to inform; to report
@@ -623,7 +623,7 @@ el reportaje | report; feature
 la libertad de expresión | freedom of speech; freedom of expression
 la opinión | opinion
 la fuente | source; fountain
-fiable | reliable; trustworthy
+fiable; confiable | reliable; trustworthy
 la privacidad | privacy
 el ciberacoso | cyberbullying
 la audiencia | audience; ratings
@@ -631,15 +631,15 @@ la audiencia | audience; ratings
 
 topic("ingenuity", "technology", "Technology", "La tecnología", `
 la tecnología | technology
-el ordenador; la computadora | computer
-el portátil | laptop
+el ordenador; la computadora; el computador | computer
+el portátil; el ordenador portátil; la laptop | laptop
 el (teléfono) móvil; el celular | mobile phone; cell phone; mobile
 la tableta | tablet
 la pantalla | screen
 el teclado | keyboard
 el ratón | mouse
 la impresora | printer
-los auriculares | headphones; earphones
+los auriculares; los cascos; los audífonos | headphones; earphones
 el cargador | charger
 la batería | battery
 el dispositivo | device
@@ -650,18 +650,18 @@ el wifi | wifi; wi-fi
 la página web | web page; website
 el sitio web | website
 la aplicación; la app | app; application
-el correo electrónico | email; e-mail
-la contraseña | password
+el correo electrónico; el email; el e-mail; el correo | email; e-mail
+la contraseña; la clave | password
 el usuario | user; username
 navegar por internet | to surf the internet; to browse the internet
 buscar | to look for; to search
 enviar; mandar | to send
 recibir | to receive
 guardar | to save; to keep
-borrar | to delete; to erase
+borrar; eliminar | to delete; to erase
 imprimir | to print
 cargar | to charge; to load
-encender | to turn on; to switch on
+encender; prender | to turn on; to switch on
 apagar | to turn off; to switch off
 funcionar | to work [machine]; to function
 el robot | robot
@@ -692,8 +692,8 @@ la capital | capital
 el centro | centre; center; city centre; town centre
 las afueras | outskirts; suburbs
 vivir | to live
-la casa | house; home
-el piso | flat; apartment; floor
+la casa; el hogar | house; home
+el piso; el apartamento; el departamento | flat; apartment; floor
 el jardín | garden
 el edificio | building
 el rascacielos | skyscraper
@@ -724,52 +724,52 @@ sucio/a | dirty
 limpio/a | clean
 seguro/a | safe; sure
 moderno/a | modern
-antiguo/a | old; ancient
+antiguo/a; viejo/a | old; ancient
 rural | rural
 urbano/a | urban
 hay | there is; there are
 no hay | there isn't; there aren't; there is no; there are no
-al lado de | next to; beside
-enfrente de | opposite
+al lado de; junto a | next to; beside
+enfrente de; frente a | opposite
 delante de | in front of
 detrás de | behind
 entre | between; among
 `);
 
 topic("social", "education", "Education", "La educación", `
-el colegio | school
+el colegio; la escuela | school
 el instituto | secondary school; high school
-la escuela | school; primary school
+la escuela; el colegio | school; primary school
 la universidad | university; college
 el/la alumno/a | pupil; student
 el/la estudiante | student
-el/la profesor/a | teacher
+el/la profesor/a; el/la maestro/a | teacher
 el/la director/a | headteacher; principal; head
 la clase | class; classroom; lesson
 el aula | classroom
-la asignatura | subject
+la asignatura; la materia | subject
 el horario | timetable; schedule
 el recreo | break; recess
 el examen | exam
 aprobar | to pass [an exam]
-suspender | to fail [an exam]
-sacar buenas notas | to get good grades; to get good marks
+suspender; reprobar | to fail [an exam]
+sacar buenas notas; sacar buenas calificaciones | to get good grades; to get good marks
 la nota | mark; grade; note
-los deberes | homework
+los deberes; la tarea; las tareas | homework
 estudiar | to study
 aprender | to learn
 enseñar | to teach; to show
 repasar | to revise; to review
 explicar | to explain
-contestar | to answer
+contestar; responder | to answer
 hacer preguntas | to ask questions
 entender; comprender | to understand
 el uniforme | uniform
 llevar uniforme | to wear a uniform
-las normas | rules
+las normas; las reglas | rules
 obligatorio/a | compulsory; obligatory; mandatory
 prohibido/a | forbidden; banned; prohibited
-las matemáticas | maths; mathematics; math
+las matemáticas; las mates | maths; mathematics; math
 las ciencias | science; sciences
 la biología | biology
 la química | chemistry
@@ -780,16 +780,16 @@ el inglés | English [subject]
 el español | Spanish [subject]
 los idiomas | languages
 la educación física | PE; physical education
-la informática | computing; IT; ICT; computer science
+la informática; la computación | computing; IT; ICT; computer science
 la filosofía | philosophy
 la economía | economics; economy
 el Bachillerato Internacional | International Baccalaureate; IB
 el laboratorio | laboratory; lab
-el comedor | canteen; dining hall; cafeteria
+el comedor; la cafetería; la cantina | canteen; dining hall; cafeteria
 el estuche | pencil case
-el bolígrafo; el boli | pen
+el bolígrafo; el boli; la pluma | pen
 el lápiz | pencil
-el cuaderno | exercise book; notebook
+el cuaderno; la libreta | exercise book; notebook
 la mochila | school bag; backpack; rucksack
 las actividades extraescolares | extracurricular activities; after-school activities
 el intercambio | exchange
@@ -816,7 +816,7 @@ las prácticas | work experience; internship
 el sueldo; el salario | salary; wage; pay
 ganar dinero | to earn money
 el dinero | money
-la empresa | company; firm; business
+la empresa; la compañía | company; firm; business
 la oficina | office
 la fábrica | factory
 el jefe; la jefa | boss
@@ -824,12 +824,12 @@ el/la empleado/a | employee
 el/la compañero/a de trabajo | colleague; co-worker
 el/la cliente | customer; client
 la entrevista de trabajo | job interview
-el currículum | CV; résumé; resume
+el currículum; el currículo; el currículum vitae; el CV | CV; résumé; resume
 la carta de presentación | cover letter; covering letter
 solicitar | to apply for
 la solicitud | application
 la experiencia | experience
-las habilidades | skills
+las habilidades; las destrezas | skills
 la reunión | meeting
 el contrato | contract
 contratar | to hire; to employ
@@ -840,26 +840,26 @@ exigente | demanding
 agotador/a | exhausting; tiring
 gratificante | rewarding
 el ambiente de trabajo | working environment; work atmosphere
-jubilarse | to retire
-cuidar niños | to babysit; to look after children
+jubilarse; retirarse | to retire
+cuidar niños; hacer de canguro | to babysit; to look after children
 repartir periódicos | to deliver newspapers
 el/la enfermero/a | nurse
 el/la abogado/a | lawyer
 el/la ingeniero/a | engineer
 el/la cocinero/a | cook; chef
-el/la dependiente/a | shop assistant; sales assistant
+el/la dependiente/a; el/la vendedor/a | shop assistant; sales assistant
 el/la policía | police officer
 el/la bombero/a | firefighter
 el/la mecánico/a | mechanic
 el/la peluquero/a | hairdresser
 el/la veterinario/a | vet; veterinarian
 el/la arquitecto/a | architect
-el/la granjero/a | farmer
+el/la granjero/a; el/la agricultor/a | farmer
 el/la científico/a | scientist
 el/la programador/a | programmer
 el/la diseñador/a | designer
 el/la cajero/a | cashier
-el/la contable | accountant
+el/la contable; el/la contador/a | accountant
 `);
 
 topic("social", "issues", "Social issues", "Problemas sociales", `
@@ -868,7 +868,7 @@ el problema | problem
 la sociedad | society
 la pobreza | poverty
 pobre | poor
-las personas sin hogar | homeless people; the homeless
+las personas sin hogar; las personas sin techo; los sin techo | homeless people; the homeless
 la vivienda | housing
 el hambre | hunger
 la desigualdad | inequality
@@ -886,7 +886,7 @@ la drogadicción | drug addiction
 el alcoholismo | alcoholism
 el acoso | harassment; bullying
 la soledad | loneliness
-las personas mayores | the elderly; elderly people; old people
+las personas mayores; los ancianos; la tercera edad | the elderly; elderly people; old people
 la discapacidad | disability
 la obesidad | obesity
 la inmigración | immigration
@@ -907,7 +907,7 @@ el gobierno | government
 la ley | law
 votar | to vote
 las elecciones | elections
-la manifestación | demonstration; protest
+la manifestación; la protesta | demonstration; protest
 protestar | to protest
 la campaña | campaign
 luchar contra | to fight against; to combat
@@ -926,8 +926,8 @@ hace frío | it's cold
 hace viento | it's windy
 hace buen tiempo | the weather is good; it's nice weather; it's good weather
 hace mal tiempo | the weather is bad; it's bad weather
-llueve | it's raining; it rains
-nieva | it's snowing; it snows
+llueve; está lloviendo | it's raining; it rains
+nieva; está nevando | it's snowing; it snows
 está nublado | it's cloudy
 hay niebla | it's foggy; there is fog
 hay tormenta | there's a storm; it's stormy
@@ -943,10 +943,10 @@ la sequía | drought
 la inundación | flood
 el incendio forestal | forest fire; wildfire
 el desastre natural | natural disaster
-el pronóstico del tiempo | weather forecast
+el pronóstico del tiempo; la previsión del tiempo | weather forecast
 la temperatura | temperature
 los grados | degrees
-caluroso/a | hot; warm
+caluroso/a; caliente | hot; warm
 frío/a | cold
 húmedo/a | humid; damp; wet
 seco/a | dry
@@ -961,9 +961,9 @@ los gases de efecto invernadero | greenhouse gases
 el dióxido de carbono | carbon dioxide
 la huella de carbono | carbon footprint
 el nivel del mar | sea level
-derretirse | to melt
-aumentar | to increase; to rise
-bajar | to go down; to fall; to lower
+derretirse; fundirse | to melt
+aumentar; subir | to increase; to rise
+bajar; disminuir | to go down; to fall; to lower
 afectar | to affect
 `);
 
@@ -1003,11 +1003,11 @@ el norte | north
 el sur | south
 el este | east
 el oeste | west
-situado/a | located; situated
+situado/a; ubicado/a | located; situated
 se encuentra | is located; it is located
 la altura | height; altitude
 montañoso/a | mountainous
-llano/a | flat
+llano/a; plano/a | flat
 profundo/a | deep
 árido/a | arid; dry
 fértil | fertile
@@ -1028,19 +1028,19 @@ proteger | to protect
 la contaminación | pollution
 contaminar | to pollute
 contaminado/a | polluted
-la basura | rubbish; trash; garbage
+la basura; los desechos | rubbish; trash; garbage
 los residuos | waste
 el vertedero | landfill; rubbish dump; dump
 reciclar | to recycle
 el reciclaje | recycling
 el contenedor | bin; recycling bin; container
-reutilizar | to reuse
+reutilizar; reusar | to reuse
 reducir | to reduce
 malgastar; desperdiciar | to waste
 ahorrar | to save [money, energy]
 el plástico | plastic
 las bolsas de plástico | plastic bags
-el vidrio | glass
+el vidrio; el cristal | glass
 el cartón | cardboard
 el papel | paper
 la lata | can; tin
@@ -1055,19 +1055,19 @@ el petróleo | oil; petroleum
 el carbón | coal
 los recursos naturales | natural resources
 la deforestación | deforestation
-talar árboles | to cut down trees
+talar árboles; cortar árboles | to cut down trees
 el árbol | tree
 plantar | to plant
 la especie en peligro de extinción | endangered species
 la fauna | wildlife; fauna
 el ecosistema | ecosystem
-sostenible | sustainable
+sostenible; sustentable | sustainable
 la sostenibilidad | sustainability
 verde | green
 el agua potable | drinking water
-el grifo | tap; faucet
+el grifo; la llave | tap; faucet
 cerrar el grifo | to turn off the tap
-apagar las luces | to turn off the lights; to switch off the lights
+apagar las luces; apagar la luz | to turn off the lights; to switch off the lights
 la capa de ozono | ozone layer; the ozone layer
 la lluvia ácida | acid rain
 destruir | to destroy
@@ -1151,7 +1151,7 @@ pero | but
 o | or
 también | also; too
 tampoco | neither; not either
-sin embargo | however
+sin embargo; no obstante | however
 además | furthermore; in addition; besides
 por eso | that's why; therefore
 por lo tanto | therefore
@@ -1159,7 +1159,7 @@ entonces | then; so
 luego | then; later
 después | afterwards; after
 primero | first
-finalmente; por último | finally
+finalmente; por último; al final | finally
 cuando | when [not a question]
 si | if
 aunque | although; even though
@@ -1170,10 +1170,10 @@ por ejemplo | for example
 es decir | that is to say; in other words
 sobre todo | above all; especially
 en cambio | on the other hand; instead
-nunca | never
+nunca; jamás | never
 siempre | always
 a veces | sometimes
-a menudo | often
+a menudo; con frecuencia; frecuentemente | often
 casi | almost
 muy | very
 bastante | quite; enough
@@ -1202,7 +1202,7 @@ actualmente | currently; nowadays
 hoy en día | nowadays; these days
 todos los días | every day
 normalmente | normally; usually
-generalmente | generally
+generalmente; por lo general | generally; usually
 de vez en cuando | from time to time; now and then
 una vez a la semana | once a week
 dos veces al mes | twice a month
@@ -1214,11 +1214,11 @@ los lunes | on Mondays
 temprano | early
 tarde | late
 pronto | soon
-todavía | still; yet
+todavía; aún | still; yet
 todavía no | not yet
 ya | already
 alguna vez | ever
-recientemente | recently
+recientemente; últimamente | recently; lately
 la semana que viene; la próxima semana | next week
 el año que viene; el próximo año | next year
 dentro de diez años | in ten years; in ten years' time
@@ -1231,7 +1231,7 @@ me gusta | I like [one thing]
 me gustan | I like [plural]
 me encanta | I love [a thing]
 no me gusta nada | I don't like it at all
-odio | I hate
+odio; detesto | I hate
 prefiero | I prefer
 me interesa | I'm interested in; it interests me
 me molesta | it annoys me; it bothers me
@@ -1268,10 +1268,10 @@ fácil | easy
 difícil | difficult; hard
 útil | useful
 inútil | useless
-genial | great; brilliant
-horrible | horrible; awful
+genial; estupendo/a; fantástico/a | great; brilliant; fantastic
+horrible; terrible; fatal | horrible; awful; terrible
 ¡qué bien! | how good!; great!
-¡qué pena! | what a shame!; what a pity!
+¡qué pena!; ¡qué lástima! | what a shame!; what a pity!
 `);
 
 topic("core", "numbers", "Numbers", "Los números", `

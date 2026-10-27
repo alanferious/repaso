@@ -120,7 +120,16 @@
     out.delete("");
     return [...out];
   }
+  // Keys for matching meanings between words. Unlike answer checking, "to show" and "show" stay distinct.
+  function meaningKeys(raw, lang) {
+    return raw.split(";").map((alt) => {
+      const t = stripAcc(alt.toLowerCase()).replace(/[\[\]()¿¡?!.,:"]/g, " ").replace(/[’']/g, "").replace(/\s+/g, " ").trim();
+      return lang === "en" ? t.replace(/^(the|a|an) /, "") : t;
+    }).filter(Boolean);
+  }
   const display = (raw) => raw.split(";").map((x) => x.trim()).join(", ");
+  // Prompts and options show the first two ways of saying it; every alternative is still accepted
+  const displayShort = (raw) => raw.split(";").slice(0, 2).map((x) => x.trim()).join(", ");
   function speakText(es) {
     const first = es.split(";")[0].replace(/\[[^\]]*\]/g, "").trim();
     return expandGender(expandOpt(first)[0])[0];
@@ -163,11 +172,19 @@
       return {
         kind: "vocab", id: `v:${t.id}:${es}`, topic: t.id, es, en,
         esAcc: accepted(es, "es"), enAcc: accepted(en, "en"), say: speakText(es),
+        enKeys: meaningKeys(en, "en"), esKeys: meaningKeys(es, "es"),
       };
     });
     TOPIC_MAP[t.id] = t;
   }
   const ALL_VOCAB = TOPICS.flatMap((t) => t.items);
+  // Meaning index across every list: an English prompt accepts the Spanish of any word with the
+  // same meaning (and vice versa). Hints stay in the key, so "hot [spicy]" never matches plain "hot".
+  const MEANING = { en: new Map(), es: new Map() };
+  for (const it of ALL_VOCAB) for (const lang of ["en", "es"]) for (const k of it[lang + "Keys"]) {
+    if (!MEANING[lang].has(k)) MEANING[lang].set(k, []);
+    MEANING[lang].get(k).push(it);
+  }
   const ITEM_BY_ID = Object.fromEntries(ALL_VOCAB.map((i) => [i.id, i]));
   const VERB_MAP = Object.fromEntries(VERBS.map((v) => [v.inf, v]));
   const TENSE_MAP = Object.fromEntries(TENSES.map((t) => [t.key, t]));
@@ -543,10 +560,9 @@
     let dir = sess.mode === "listen" ? "listen" : sess.dir === "mixed" ? (Math.random() < 0.5 ? "en-es" : "es-en") : sess.dir;
     const toEs = dir !== "es-en";
     const acc = new Set(toEs ? item.esAcc : item.enAcc);
-    // Same meaning in the list (e.g. two words for "personality")? accept either.
-    const keys = toEs ? item.enAcc : item.esAcc;
-    if (dir !== "listen") for (const o of sess.all) {
-      if (o !== item && (toEs ? o.enAcc : o.esAcc).some((k) => keys.includes(k))) (toEs ? o.esAcc : o.enAcc).forEach((a) => acc.add(a));
+    // Same meaning anywhere in the app (e.g. "personality", "lunch", "school")? accept any of those words.
+    if (dir !== "listen") for (const k of toEs ? item.enKeys : item.esKeys) {
+      for (const o of MEANING[toEs ? "en" : "es"].get(k) || []) (toEs ? o.esAcc : o.enAcc).forEach((a) => acc.add(a));
     }
     return {
       item, dir, lang: toEs ? "es" : "en", accepted: acc,
@@ -558,14 +574,14 @@
   function vocabOptions(item, toEs) {
     const side = (i) => (toEs ? i.es : i.en);
     let src = sess.all.length >= 4 ? sess.all : ALL_VOCAB;
-    const seen = new Set([display(side(item))]);
+    const seen = new Set([displayShort(side(item))]);
     const opts = [item];
     for (const o of shuffle([...src])) {
       if (opts.length >= 4) break;
-      const d = display(side(o));
+      const d = displayShort(side(o));
       if (!seen.has(d) && o.en !== item.en) { seen.add(d); opts.push(o); }
     }
-    return shuffle(opts.map((o) => ({ text: display(side(o)), right: o === item })));
+    return shuffle(opts.map((o) => ({ text: displayShort(side(o)), right: o === item })));
   }
   function verbOptions(item) {
     const right = item.acc[0];
@@ -684,7 +700,7 @@
     const toEs = q.dir === "en-es";
     return `
       <div class="q-dir"><span class="tag">${toEs ? "English" : "Spanish"}</span>${ic("arrow")}<span class="tag">${toEs ? "Spanish" : "English"}</span></div>
-      <div class="q-prompt"><span${toEs ? "" : ' lang="es"'}>${withHints(display(q.prompt))}</span>${toEs ? "" : ` <button class="spk" data-say="${esc(it.say)}" aria-label="Listen to ${esc(it.say)}">${ic("speaker")}</button>`}</div>`;
+      <div class="q-prompt"><span${toEs ? "" : ' lang="es"'}>${withHints(displayShort(q.prompt))}</span>${toEs ? "" : ` <button class="spk" data-say="${esc(it.say)}" aria-label="Listen to ${esc(it.say)}">${ic("speaker")}</button>`}</div>`;
   }
 
   const ACCENTS = ["á", "é", "í", "ó", "ú", "ñ", "ü", "¿", "¡"];
@@ -819,7 +835,7 @@
   }
   function answerLabel(q, retype) {
     const it = q.item;
-    const plain = (t) => display(t).replace(/\[([^\]]+)\]/g, "($1)");
+    const plain = (t) => displayShort(t).replace(/\[([^\]]+)\]/g, "($1)");
     const what = it.kind === "verb" ? `${it.v.inf}, ${PERSONS[it.p]}, ${TENSE_MAP[it.tense].en}: type the Spanish form`
       : q.dir === "listen" ? "Type the Spanish word you heard"
       : `${q.lang === "es" ? "Spanish" : "English"} for ${plain(q.prompt)}`;
