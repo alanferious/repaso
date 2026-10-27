@@ -1,4 +1,6 @@
-# Repaso: IB Spanish ab initio practice
+# KM0: IB Spanish ab initio practice
+
+*Todo empieza en cero.* KM0 (kilómetro cero) is a practice app for IB Spanish ab initio vocabulary and verbs, drawn as a metro map.
 
 Use it online at **https://alanferious.github.io/repaso/**, or download this folder and open `index.html` in Chrome, Edge or Firefox. It runs offline and needs no installation.
 
@@ -20,6 +22,10 @@ Edit `vocab.js`. Each line is `spanish | english`:
 | `el/la profesor/a` | accepts *el profesor* or *la profesora* |
 | `el (teléfono) móvil` | the part in brackets is optional |
 | `tarde \| late [not early]` | square brackets are a hint and never need typing |
+
+## Brand
+
+The name, logo files, colours, type and voice are described in the brand guide: `brand.html` (online at https://alanferious.github.io/repaso/brand.html). Logo files live in `brand/`.
 
 ## Notes
 

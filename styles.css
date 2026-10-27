@@ -86,12 +86,8 @@ a { color: var(--focus); text-underline-offset: 3px; }
   border-bottom: 1px solid var(--rule);
 }
 .brand { display: flex; align-items: center; gap: 12px; background: none; border: 0; padding: 0; color: var(--ink); text-align: left; }
-.brand .logo {
-  width: 26px; height: 26px; border-radius: 50%; border: 5px solid var(--ink); background: var(--ground); flex: none;
-  box-shadow: 0 0 0 2px var(--ground), 0 0 0 4px var(--l1);
-}
-.brand .word { font: 700 22px/1 var(--sign); text-transform: uppercase; letter-spacing: .06em; }
-.brand small { display: block; font: 500 11px/1.2 var(--sign); letter-spacing: .12em; color: var(--ink-3); margin-top: 3px; }
+.brand .km0 { height: 24px; width: auto; display: block; color: var(--ink); }
+.brand small { display: block; font: 600 11px/1.15 var(--sign); text-transform: uppercase; letter-spacing: .12em; color: var(--ink-2); padding-left: 10px; border-left: 1.5px solid var(--rule); }
 .nav { display: flex; gap: 2px; margin-left: 8px; }
 .nav button {
   background: none; border: 0; padding: 19px 12px 15px; color: var(--ink-2);

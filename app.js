@@ -50,6 +50,9 @@
 
   /* ═══════════════════════ text helpers ═══════════════════════ */
 
+  // KM0 wordmark, generated from brand/ geometry: letters and the Zero take currentColor, the origin dot stays scarlet
+  const KM0_MARK = `<svg class="km0" viewBox="0 0 225.43 100" role="img" aria-hidden="true"><g fill="currentColor"><path transform="translate(0.00 100) scale(0.14286 -0.14286)" d="M44 12V688Q44 693 47.5 696.5Q51 700 56 700H173Q178 700 181.5 696.5Q185 693 185 688V436Q185 432 187.5 431.5Q190 431 191 435L320 691Q325 700 334 700H458Q465 700 467.5 696.5Q470 693 467 686L319 398Q318 394 318 392L475 14Q476 12 476 8Q476 0 466 0H341Q330 0 327 9L223 271Q222 274 220.0 273.5Q218 273 216 271L187 219Q185 215 185 213V12Q185 7 181.5 3.5Q178 0 173 0H56Q51 0 47.5 3.5Q44 7 44 12Z"/><path transform="translate(72.14 100) scale(0.14286 -0.14286)" d="M379 700H495Q500 700 503.5 696.5Q507 693 507 688V12Q507 7 503.5 3.5Q500 0 495 0H378Q373 0 369.5 3.5Q366 7 366 12V461Q366 465 364.0 465.0Q362 465 360 462L282 324Q277 316 274 316Q271 316 266 324L188 462Q186 465 184.0 465.0Q182 465 182 461V12Q182 7 178.5 3.5Q175 0 170 0H53Q48 0 44.5 3.5Q41 7 41 12V688Q41 693 44.5 696.5Q48 700 53 700H168Q178 700 183 692L272 533Q275 529 278 533L364 692Q368 700 379 700Z"/></g><path fill="currentColor" fill-rule="evenodd" d="M192.43,0.00 A33.00,33.00 0 0 1 225.43,33.00 V67.00 A33.00,33.00 0 0 1 159.43,67.00 V33.00 A33.00,33.00 0 0 1 192.43,0.00Z M192.43,19.00 A14.00,14.00 0 0 1 206.43,33.00 V67.00 A14.00,14.00 0 0 1 178.43,67.00 V33.00 A14.00,14.00 0 0 1 192.43,19.00Z"/><circle cx="192.43" cy="50.00" r="8.00" fill="var(--scarlet)"/></svg>`;
+
   // Line icons, one stroke weight throughout
   const ICONS = {
     star: '<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>',
@@ -273,7 +276,7 @@
     const nav = [["home", "Vocabulary"], ["verbs", "Verb drills"], ["guide", "Tense guide"], ["progress", "Progress"]];
     const navOn = screen === "list" ? "home" : screen;
     top.innerHTML = `
-      <button class="brand" data-go="home"><span class="logo" aria-hidden="true"></span><span><span class="word">Repaso</span><small>IB Spanish ab initio</small></span></button>
+      <button class="brand" data-go="home" aria-label="KM0 home">${KM0_MARK}<small>Spanish<br>ab initio</small></button>
       <nav class="nav">${nav.map(([k, l]) => `<button data-go="${k}" class="${navOn === k ? "on" : ""}">${l}</button>`).join("")}</nav>
       <div class="hstats">
         <span class="pill" title="Day streak">${ic("flame")}<b>${streak()}</b> day streak</span>
@@ -300,15 +303,15 @@
     const themePct = (th) => pct(TOPICS.filter((t) => t.theme === th.id).flatMap((t) => t.items));
     const welcome = !S.settings.onboarded && !S.stats.answered;
     app.innerHTML = `
-      <h1 class="sr-only">Repaso: IB Spanish ab initio practice</h1>
+      <h1 class="sr-only">KM0: IB Spanish ab initio practice</h1>
       ${welcome ? `<section class="welcome" aria-labelledby="welcome-h">
-        <div class="welcome-top"><h2 id="welcome-h">Bienvenido a bordo · How Repaso works</h2><button class="link" id="hideWelcome">Got it, hide this</button></div>
+        <div class="welcome-top"><h2 id="welcome-h">Bienvenido a KM0 · How it works</h2><button class="link" id="hideWelcome">Got it, hide this</button></div>
         <ol class="wstops">
           <li><span class="dot"></span><b>Press Enter at Sol</b><span>Smart review picks the words you are weakest on, from every list. The map fills in as you go.</span></li>
           <li><span class="dot"></span><b>Retype what you miss</b><span>A wrong answer has to be retyped before you move on, and it comes back later in the session.</span></li>
           <li><span class="dot"></span><b>Accents in two keys</b><span>Type a, e, i, o, u or n, then press <kbd>1</kbd> or <kbd>2</kbd> for á, ñ, ü and the rest.</span></li>
         </ol>
-        <p class="welcome-note">Progress is saved in this browser only: to switch devices, copy it from the Progress page and paste it into Repaso on the other device. The lists follow the ab initio themes, so check them against your teacher's lists too.</p>
+        <p class="welcome-note">Progress is saved in this browser only: to switch devices, copy it from the Progress page and paste it into KM0 on the other device. The lists follow the ab initio themes, so check them against your teacher's lists too.</p>
       </section>` : ""}
       <div class="home">
         <section class="board" aria-label="Today">
@@ -459,7 +462,7 @@
       return `<button class="stn ${stationState(t)}" data-topic="${id}" data-at="${at}" style="left:${x / 10}%;top:${y / 6}%;--c:${th.color}"
         aria-label="${esc(t.name)}, ${th.line}, ${p}% mastered"><span class="dot"></span><span class="lbl">${esc(STATION_NAMES[id])}<small>${p}%</small></span></button>`;
     })).join("");
-    return svg + stops + `<button class="sol" style="left:50%;top:50%" aria-label="Sol: start Smart review"><span class="lbl">Sol<small>Smart review</small></span></button>`;
+    return svg + stops + `<button class="sol" style="left:50%;top:50%" aria-label="Sol: start Smart review"><span class="lbl">Sol<small>Km 0 · Smart review</small></span></button>`;
   }
 
   /* ═══════════════════════ list preview + setup ═══════════════════════ */
@@ -1280,7 +1283,7 @@
       </div>
       <div class="sec-title">Your data</div>
       <div class="card">
-        <p class="muted" style="margin-top:0">Progress is saved in this browser only. To move it to another device, copy it here and paste it into Repaso there.</p>
+        <p class="muted" style="margin-top:0">Progress is saved in this browser only. To move it to another device, copy it here and paste it into KM0 there.</p>
         <div class="row">
           <button class="btn" id="copyProg">${ic("upload")} Copy progress</button>
           <button class="btn" id="pasteProg">${ic("download")} Paste progress</button>
@@ -1315,9 +1318,9 @@
     };
     document.getElementById("copyProg").onclick = () => {
       const text = JSON.stringify(S);
-      const fallback = () => showTransfer("Copy this text (Ctrl+C), then paste it into Repaso on your other device.", text, false);
+      const fallback = () => showTransfer("Copy this text (Ctrl+C), then paste it into KM0 on your other device.", text, false);
       try {
-        navigator.clipboard.writeText(text).then(() => toast("Progress copied. Paste it into Repaso on your other device"), fallback);
+        navigator.clipboard.writeText(text).then(() => toast("Progress copied. Paste it into KM0 on your other device"), fallback);
       } catch (e) { fallback(); }
     };
     document.getElementById("pasteProg").onclick = () => showTransfer("Paste the progress you copied from your other device, then load it. This replaces the progress in this browser.", "", true);
@@ -1348,14 +1351,14 @@
   function importProgress(text) {
     try {
       const d = JSON.parse(text);
-      if (!d.mastery || !d.stats) throw new Error("not a Repaso export");
+      if (!d.mastery || !d.stats) throw new Error("not a KM0 export");
       localStorage.setItem(KEY, JSON.stringify(d));
       S = load();
       applyTheme();
       toast("Progress loaded");
       go("progress");
     } catch (err) {
-      toast("That isn't Repaso progress. Copy it again from the other device");
+      toast("That isn't KM0 progress. Copy it again from the other device");
     }
   }
 
